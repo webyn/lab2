@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-  background-color: lightgreen;
-}
+  <style>
+    body {
+      background: url(art.jpg) no-repeat center center fixed;
+      background-size: cover; /* Ensures the background image covers the entire body */
+      font-family: Arial, sans-serif; /* Change the default font for better readability */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+    
+    .container {
+      max-width: 800px; /* Limit content width for better readability */
+      margin: 0 auto; /* Center content horizontally */
+      padding: 20px; /* Add padding for space around content */
+    }
+    
+    h1 {
+      color: White;
+      text-align: center;
+    }
+    
+    h2 {
+      color: #2ecc71; /* Change h2 color to a softer green */
+      text-align: center;
+      font-size: 36px; /* Reduce h2 font size for better proportion */
+    }
+    
+    ul.a {
+      list-style-type: none; /* Remove bullet points */
+      color: yellow;
+      text-align: center;
+      font-size: 24px; /* Reduce font size for better readability */
+    }
 
-h1 {
-  color: white;
-  text-align: center;
-}
-  h2 {
-  color: Green;
-  text-align: center;
-}
-
-h2 {
-  font-family: verdana;
-  font-size: 50px;
-}
-  
-</style>
+    ul.a li {
+      margin-bottom: 10px; /* Add spacing between list items */
+    }
+  </style>
 </head>
 <body>
-
-<h1>My Personal Profile</h1>
-<h2>Robyn Dominique Fruto</h2>
-  
- <script>
-document.getElementById("demo").innerHTML = "Yipee.";
-</script> 
-  <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-
-<p id="demo"></p>
-<div class="container-fluid p-5 bg-primary text-white text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
-  
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Pengu</h3>
-      <p>I love penguins</p>
-      <p>They wobble</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Doggo</h3>
-      <p>I love dogs</p>
-      <p>They are so fluffy</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Kitties</h3>        
-      <p>I love cats</p>
-      <p>and their cute faces!</p>
-    </div>
+  <div class="container">
+    <h1>My Personal Profile</h1>
+    
+    <section>
+      <h2>PERSONAL</h2>
+      <ul class="a">
+        <li>Name: Robyn</li>
+        <li>Section: SS221</li>
+        <li>Age: 20</li>
+      </ul>
+    </section>
+    
+    <section>
+      <h2>Dislikes</h2>
+      <ul class="a">
+        <li>Thunderstorms</li>
+        <li>Bugs</li>
+        <li>Rude People</li>
+      </ul>
+    </section>
+    
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+      Click me to display Date and Time.
+    </button>
+    
+    <p id="demo"></p>
   </div>
-</div>
 </body>
 </html>
