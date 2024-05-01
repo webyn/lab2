@@ -1,62 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-
-body {
-  background-image: url('cute_animal.jpg');
-}
-
-h1 {
-  color: green;
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-    body, html {
-      height: 100%;
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-image: url('cute_animal.jpg');
+      margin: 0; /* Remove default margin */
       font-family: "Inconsolata", sans-serif;
     }
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-img {
-  border-radius: 50%;
-    .menu {
-      display: none;
+
+    h1 {
+      color: green;
+      text-align: center;
     }
-<body>
-</style>
+
+    p {
+      font-family: verdana;
+      font-size: 20px;
+    }
+
+    .top {
+      background-color: white;
+      padding: 10px 20px;
+      position: fixed;
+      width: 96%;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between; /* Spread items from left to right */
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 50px 50px;
+      border: none;
+      cursor: pointer;
+      font-size: 40px;
+      color: black;
+    }
+
+    .buttons a:hover {
+      background-color: #ddd;
+    }
+
+    .home {
+      background-color: lightgreen;
+      color: black;
+    }
+
+    .about {
+      background-color: green;
+      color: white;
+    }
+
+    .gallery {
+      background-color: lightgreen;
+      color: black;
+    }
+
+    .random {
+      background-color: green;
+      color: white;
+    }
+
+    .profile-container {
+      background-color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+    }
+	.profile-video {
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-<div class="image-container">
-        <img
-          src="ID.jpg"
-          class="w3-margin"
-          alt="Person"
-          max-width="100%"
-          height="150px"
-          style="border-radius: 50%"
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#About me" class="w3-button w3-block w3-black">ABOUT</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#Pictures" class="w3-button w3-block w3-black">MENU</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#Random" class="w3-button w3-block w3-black">WHERE</a>
-    </div>
+<nav class="top">
+  <div>
+    <a href="index.html" class="buttons home">HOME</a>
   </div>
+  <div>
+    <a href="aboutme.html" class="buttons about">ABOUT</a>
+  </div>
+  <div>
+    <a href="gallery.html" class="buttons gallery">GALLERY</a>
+  </div>
+  <div>
+    <a href="random.html" class="buttons random">RANDOM</a>
+  </div>
+</nav>
+<div class="profile-container">
+  <h1>My Personal Profile</h1>
+  </div>
+  <div>
+  <div class="profile-video">
+  <video width="1000" height="500" controls>
+  <source src="CAT.mp4" type="video/mp4">
+</video>
 </div>
-<h1>My Personal Profile</h1>
-<h1>Robyn Dominique Fruto</h1>
-
+</div>
 </body>
 </html>
