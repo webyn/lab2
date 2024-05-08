@@ -69,15 +69,27 @@ function myDisplayer(some) {
 }
 
 function myFirst() {
-  myDisplayer("Hello");
+  myDisplayer("Casual");
 }
 
 function mySecond() {
-  myDisplayer("Goodbye");
+  myDisplayer("Good Luck, Babe!");
 }
 
 myFirst();
 mySecond();
+</script>
+<p id="woop"></p>
+
+<script>
+let person = {
+  firstName : "Chapell",
+  lastName  : "Roan",
+  age     : 26,
+  eyeColor  : "Pink Pony Club"
+};
+
+document.getElementById("woop").innerHTML = person.firstName + " " + person.lastName;
 </script>
  <div class="profile-video">
   <video width="1000" height="500" controls>
