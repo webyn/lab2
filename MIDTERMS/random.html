@@ -49,6 +49,18 @@ document.getElementById("demo").innerHTML = result;
 document.getElementById("lol").innerHTML = 
 "Screen height is " + screen.height;
 </script>
+<p id="intro">DOGS DOGS CATS AND DOGS</p>
+<p>This example demonstrates the <b>getElementsById</b> method.</p>
+
+<p id="nice"></p>
+
+<script>
+const element = document.getElementById("intro");
+
+document.getElementById("nice").innerHTML = 
+"The text from the intro paragraph is: " + element.innerHTML;
+
+</script>
  <div class="profile-video">
   <video width="1000" height="500" controls>
   <source src="hottogo.mp4" type="video/mp4">
