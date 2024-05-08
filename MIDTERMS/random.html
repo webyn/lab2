@@ -32,8 +32,21 @@
 <div class="random-header">
   <h2>Random</h2>
 </div>
+<h1><center>
+<p id="demo"></p></h1></center>
+
+<script>
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+
+let result = myFunction(9, 6);
+document.getElementById("demo").innerHTML = result;
+</script>
+
  <div class="profile-video">
   <video width="1000" height="500" controls>
   <source src="hottogo.mp4" type="video/mp4">
+  <p>Call a function which performs a calculation and returns the result:</p>
 </body>
 </html>
