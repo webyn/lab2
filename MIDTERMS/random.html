@@ -61,6 +61,24 @@ document.getElementById("nice").innerHTML =
 "The text from the intro paragraph is: " + element.innerHTML;
 
 </script>
+<p id="over"></p>
+
+<script>
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+function myFirst() {
+  myDisplayer("Hello");
+}
+
+function mySecond() {
+  myDisplayer("Goodbye");
+}
+
+myFirst();
+mySecond();
+</script>
  <div class="profile-video">
   <video width="1000" height="500" controls>
   <source src="hottogo.mp4" type="video/mp4">
