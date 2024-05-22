@@ -42,7 +42,10 @@ echo $y;
 $x = 5;
 var_dump($x);
 ?>
-
+<?php
+$x = 10;  
+echo $x;
+?>  
  <script>
 document.getElementById("demo").innerHTML = "Yipee.";
 </script> 
