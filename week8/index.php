@@ -30,7 +30,14 @@ h2 {
   <?php
 echo "My first PHP script!!!";
 ?>
+<?php
+$x = 5;
+$y = "John";
 
+echo $x;
+echo "<br>";
+echo $y;
+?>
  <script>
 document.getElementById("demo").innerHTML = "Yipee.";
 </script> 
