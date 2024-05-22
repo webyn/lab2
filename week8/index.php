@@ -46,6 +46,10 @@ var_dump($x);
 $x = 10;  
 echo $x;
 ?>  
+  <?php
+echo "Hello";
+print "Hello";
+?>
  <script>
 document.getElementById("demo").innerHTML = "Yipee.";
 </script> 
