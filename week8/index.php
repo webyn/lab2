@@ -38,6 +38,11 @@ echo $x;
 echo "<br>";
 echo $y;
 ?>
+<?php
+$x = 5;
+var_dump($x);
+?>
+
  <script>
 document.getElementById("demo").innerHTML = "Yipee.";
 </script> 
